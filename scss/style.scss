@@ -519,6 +519,33 @@ main {
 
 //
 
+/* ---------- SPONSORS SECTION ---------- */
+
+.sponsors {
+	.container {
+		//background-color: lightblue;
+
+		.row {
+			.col-md-4 {
+				margin: 40px 0;
+				overflow: hidden;
+				//background-color: lightgreen;
+				@include flexcenter();
+
+				img {
+					width: 80%;
+				}
+			}
+		}
+	}
+}
+
+/* ---------- SPONSORS SECTION END ---------- */
+
+//
+
+//
+
 /* ---------- TEAM SECTION ---------- */
 
 .team {
