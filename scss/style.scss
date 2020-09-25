@@ -440,6 +440,10 @@ main {
 		display: none;
 	}
 
+	#schedule-D3 {
+		display: none;
+	}
+
 	.timeline {
 		.container- {
 			.text-wrapper {
@@ -464,9 +468,10 @@ main {
 
 		display: flex;
 		justify-content: center;
+		flex-wrap: wrap;
 		gap: 20px;
 
-		button {
+		.day-button {
 			padding: 10px 50px;
 			background-color: #000;
 

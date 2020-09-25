@@ -28,14 +28,28 @@ var options = {
 };
 var typed = new Typed('.typed', options);
 
+//SCHEDULE SECTION BUTTONS
+
+let day1 = document.getElementById('schedule-D1');
+let day2 = document.getElementById('schedule-D2');
+let day3 = document.getElementById('schedule-D3');
+
 document.getElementById('day-1').addEventListener('click', () => {
-	document.getElementById('schedule-D1').style.display = 'unset';
-	document.getElementById('schedule-D2').style.display = 'none';
+	day1.style.display = 'unset';
+	day2.style.display = 'none';
+	day3.style.display = 'none';
 });
 
 document.getElementById('day-2').addEventListener('click', () => {
-	document.getElementById('schedule-D1').style.display = 'none';
-	document.getElementById('schedule-D2').style.display = 'unset';
+	day1.style.display = 'none';
+	day2.style.display = 'unset';
+	day3.style.display = 'none';
+});
+
+document.getElementById('day-3').addEventListener('click', () => {
+	day1.style.display = 'none';
+	day2.style.display = 'none';
+	day3.style.display = 'unset';
 });
 
 // Contact section image change on reload
