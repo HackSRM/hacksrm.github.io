@@ -529,14 +529,23 @@ main {
 		//background-color: lightblue;
 
 		.row {
+			justify-content: center;
 			.col-md-4 {
+				position: relative;
 				margin: 40px 0;
 				overflow: hidden;
 				//background-color: lightgreen;
 				@include flexcenter();
 
 				img {
+					position: relative;
+					left: 50%;
+					transform: translateX(-50%);
 					width: 80%;
+				}
+
+				.gmc {
+					width: 100%;
 				}
 			}
 		}
