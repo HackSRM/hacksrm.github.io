@@ -609,6 +609,37 @@ main {
 	.container {
 		//background-color: lightblue;
 
+		.tier-title-wrapper {
+			position: relative;
+			@include flexcenter();
+			flex-direction: column;
+
+			.tier-title {
+				position: relative;
+				//left: 50%;
+				padding: 0;
+				margin: 0;
+				transform: translate(0%, 50%);
+
+				width: min-content;
+				padding: 10px 30px;
+				background-color: #000;
+				border-radius: 500px;
+
+				color: #fff;
+				font-size: 1.2rem;
+				font-weight: 500;
+				letter-spacing: 1.5px;
+			}
+
+			.line {
+				height: 2px;
+				width: 70%;
+				border-radius: 200px;
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+		}
+
 		.row {
 			justify-content: center;
 			.col-md-4 {
