@@ -331,7 +331,7 @@ main {
 		//background-color: lightcoral;
 
 		.col-md-4 {
-			//height: 200px;
+			margin: 20px 0;
 
 			display: flex;
 			justify-content: center;
@@ -373,14 +373,6 @@ main {
 					letter-spacing: 1px;
 				}
 			}
-		}
-
-		.col-md-4:nth-child(2n) {
-			//background-color: lightgreen;
-		}
-
-		.col-md-4:nth-child(2n + 1) {
-			//background-color: lightsalmon;
 		}
 	}
 }
