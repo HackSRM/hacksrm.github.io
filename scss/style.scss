@@ -610,6 +610,7 @@ main {
 		//background-color: lightblue;
 
 		.tier-title-wrapper {
+			margin: 50px 0 40px 0;
 			position: relative;
 			@include flexcenter();
 			flex-direction: column;
@@ -659,7 +660,36 @@ main {
 				.gmc {
 					width: 100%;
 				}
+
+				.framer {
+					@include flexcenter();
+					color: #000;
+					font-size: 2rem;
+					font-weight: 700;
+					text-decoration: none;
+
+					img {
+						width: 20%;
+						left: unset;
+						transform: unset;
+					}
+				}
+
+				#jetbrains {
+					width: 50%;
+				}
+
+				#portis {
+					transform: scale(2.1) translateX(-25%);
+				}
+
+				#fold {
+					transform: scale(1.4) translateX(-40%);
+				}
 			}
+			/*.col-md-4:nth-child(2n) {
+				background-color: lightsalmon;
+			}*/
 		}
 	}
 }
