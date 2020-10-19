@@ -382,8 +382,10 @@ main {
 		}
 
 		.prize-card {
-			height: 300px;
-			width: 300px;
+			min-height: 500px;
+			min-width: 400px;
+			padding: 40px 0;
+
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
@@ -408,6 +410,16 @@ main {
 				font-size: 1.5rem;
 				font-weight: 700;
 			}
+
+			ul {
+				margin-top: 20px;
+				padding: 0 40px 0 70px;
+
+				li {
+					color: #fff;
+					font-size: 1.4rem;
+				}
+			}
 		}
 
 		.first {
@@ -420,6 +432,12 @@ main {
 
 		.third {
 			background-image: linear-gradient(to top, #f5576c 0%, #f093fb 100%);
+		}
+
+		p {
+			margin-top: 20px;
+			text-align: center;
+			font-size: 2.5rem;
 		}
 	}
 }

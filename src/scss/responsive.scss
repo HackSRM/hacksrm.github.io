@@ -89,7 +89,20 @@
 	.prizes {
 		.container {
 			.col-md-4 {
-				margin-bottom: 50px;
+				margin: -20px 0;
+			}
+
+			.prize-card {
+				min-height: unset;
+				margin: 0 !important;
+
+				&:hover {
+					transform: unset !important;
+				}
+			}
+
+			p {
+				font-size: 1.8rem;
 			}
 		}
 	}
