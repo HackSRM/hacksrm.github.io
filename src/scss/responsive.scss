@@ -155,6 +155,7 @@
 	}
 
 	.contact {
+		padding-bottom: 150px !important;
 		.container {
 			.image-container {
 				margin: 0;
@@ -169,6 +170,27 @@
 				font-weight: 400;
 				font-size: 2rem;
 			}
+		}
+	}
+
+	footer {
+		.content {
+			.container-fluid {
+				padding-top: 30px !important;
+
+				.copyright-info {
+					margin-top: 60px !important;
+				}
+			}
+		}
+		.logo-wrapper {
+			margin-bottom: 40px;
+			img {
+				width: 100px;
+			}
+		}
+		.menu {
+			margin-bottom: 40px;
 		}
 	}
 }
