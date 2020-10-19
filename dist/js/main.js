@@ -24,3 +24,14 @@ document.getElementById('day-3').addEventListener('click', () => {
 
 // Contact section image change on reload
 //document.getElementById('contact-image').innerHTML = `<img src="assets/images/contact/contact-${Math.floor(Math.random() * 8) + 1}.svg" alt="" />`;
+
+//COPYRIGHT YEAR AUTOMATIC CHANGE SCRIPT
+
+let startYear = 2020;
+let currentYear = new Date().getFullYear();
+
+if(startYear === currentYear){
+	document.getElementById('copyright').innerHTML = `© ${startYear} | HackSRM`
+} else {
+	document.getElementById('copyright').innerHTML = `© ${startYear} - ${currentYear} | HackSRM`
+}
