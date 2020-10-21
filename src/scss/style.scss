@@ -797,6 +797,8 @@ main {
 /* ---------- CONTACT SECTION ---------- */
 
 .contact {
+	padding-bottom: 130px !important;
+
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -812,7 +814,6 @@ main {
 		}
 
 		.sub {
-			margin-top: 60px;
 			font-size: 2rem;
 			font-weight: 700;
 			color: rgba(0, 0, 0, 0.8);
@@ -820,22 +821,25 @@ main {
 		}
 
 		.info-container {
-			//background-color: lightblue;
-			margin-top: 50px;
+			width: 100%;
+			margin: 70px 0;
+
 			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 50px;
 
 			.info-wrapper {
 				display: flex;
 				align-items: center;
 				flex-direction: column;
 
-				//background-color: lightcoral;
-
 				.icon {
-					height: 80px;
-					width: 80px;
+					height: 100px;
+					width: 100px;
 					padding-top: 3px;
-					background-color: rgba(0, 0, 0, 0.1);
+					//background-color: rgba(255, 255, 255, 0.1);
+					background-color: rgba(0, 0, 0, 0.2);
 					@include flexcenter();
 
 					border-radius: 500px;
@@ -864,10 +868,6 @@ main {
 						}
 					}
 				}
-			}
-
-			.info-wrapper:first-child {
-				margin-right: 80px;
 			}
 		}
 

@@ -23,7 +23,7 @@ document.getElementById('day-3').addEventListener('click', () => {
 });
 
 // Contact section image change on reload
-//document.getElementById('contact-image').innerHTML = `<img src="assets/images/contact/contact-${Math.floor(Math.random() * 8) + 1}.svg" alt="" />`;
+document.getElementById('contact-image').innerHTML = `<img src="assets/images/contact/contact-${Math.floor(Math.random() * 6) + 1}.svg" alt="" />`;
 
 //COPYRIGHT YEAR AUTOMATIC CHANGE SCRIPT
 
