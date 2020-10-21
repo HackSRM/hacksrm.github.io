@@ -811,12 +811,64 @@ main {
 			}
 		}
 
-		.info {
+		.sub {
 			margin-top: 60px;
 			font-size: 2rem;
 			font-weight: 700;
 			color: rgba(0, 0, 0, 0.8);
 			text-align: center;
+		}
+
+		.info-container {
+			//background-color: lightblue;
+			margin-top: 50px;
+			display: flex;
+
+			.info-wrapper {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+
+				//background-color: lightcoral;
+
+				.icon {
+					height: 80px;
+					width: 80px;
+					padding-top: 3px;
+					background-color: rgba(0, 0, 0, 0.1);
+					@include flexcenter();
+
+					border-radius: 500px;
+
+					img {
+						width: 50%;
+					}
+				}
+
+				.title {
+					margin: 15px 0 7px 0;
+					font-weight: 700;
+					font-size: 1.5rem;
+				}
+
+				.info {
+					font-weight: 600;
+					font-size: 1.2rem;
+
+					a {
+						text-decoration: none;
+						color: #000;
+
+						&:hover {
+							color: rgba(0, 0, 0, 0.8);
+						}
+					}
+				}
+			}
+
+			.info-wrapper:first-child {
+				margin-right: 80px;
+			}
 		}
 
 		.email {
