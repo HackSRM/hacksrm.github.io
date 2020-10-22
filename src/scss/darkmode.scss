@@ -1,0 +1,29 @@
+#darkmode-toggle {
+	height: 50px;
+	width: 50px;
+	background-color: #333;
+
+	position: fixed;
+	z-index: 500;
+	bottom: 32px;
+	right: 32px;
+
+	border-radius: 500px;
+
+	text-align: center;
+	line-height: 50px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.dark {
+	transition-duration: 500ms;
+}
+
+.darken {
+	color: #fff;
+	background-color: #333 !important;
+	transition-duration: 500ms;
+}
