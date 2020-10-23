@@ -9,7 +9,7 @@ document.getElementById('darkmode-toggle').addEventListener('click',function () 
     if(darkmodeState === false){
         this.style.backgroundColor = '#ffedd7';
         toolTip.style.backgroundColor = '#ffedd7';
-        toolTip.style.color = '#333'
+        toolTip.style.color = '#000'
         darkmodeState = true;
     }
     else{
@@ -19,7 +19,7 @@ document.getElementById('darkmode-toggle').addEventListener('click',function () 
         darkmodeState = false;
     }
 
-    document.querySelectorAll('.dark').forEach(e=>{
+    document.querySelectorAll('.dark-mode').forEach(e=>{
         e.classList.toggle('darken')
     })
 })
