@@ -18,6 +18,9 @@
 		<!--vendor css-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+		<link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.0/css/OverlayScrollbars.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://kingsora.github.io/OverlayScrollbars/etc/os-theme-round-dark.css">
+
 		<!--main css-->
 		<link rel="stylesheet" href="dist/css/style.min.css" />
 		<link rel="stylesheet" href="dist/css/responsive.min.css" />
@@ -249,6 +252,7 @@
 								</div>
 								<ul>
 										<li>6 months free 1Password family subscription.</li>
+									        <li>CipherSchools 85% off discount coupons</li>
 										<li>Swags from Devfolio</li>
 										<li>Fold Premium access*</li>
 									</ul>
@@ -262,6 +266,7 @@
 								</div>
 								<ul>
 										<li>Swags from Devfolio</li>
+									        <li>CipherSchools 75% off discount coupons</li>
 										<li>Fold Premium access*</li>
 									</ul>
 							</div>
@@ -274,6 +279,7 @@
 								</div>
 								<ul>
 										<li>Swags from Devfolio</li>
+									        <li>CipherSchools 65% off discount coupons</li>
 										<li>Fold Premium access*</li>
 									</ul>
 							</div>
@@ -804,7 +810,7 @@
 						</div>
 						<div class="team-card">
 							<div class="img-wrapper">
-								<img src="assets/images/team/pulkit4.jpg" alt="Crew Image" />
+								<img src="assets/images/team/pulkit2.jpg" alt="Crew Image" />
 							</div>
 							<div class="name">Pulkit</div>
 							<div class="social-btn-container">
@@ -832,24 +838,6 @@
 									</div>
 								</a>
 								<a href="https://github.com/moit-bytes" target="_blank">
-									<div class="github">
-										<img src="assets/icons/github.svg" alt="" />
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="team-card">
-							<div class="img-wrapper">
-								<img src="assets/images/team/himansh.jpg" alt="Crew Image" />
-							</div>
-							<div class="name">Himansh</div>
-							<div class="social-btn-container">
-								<a href="https://www.linkedin.com/in/mudigonda-himansh/" target="_blank">
-									<div class="linkedin">
-										<img src="assets/icons/linkedin.svg" alt="" />
-									</div>
-								</a>
-								<a href="https://github.com/hhimmmmii" target="_blank">
 									<div class="github">
 										<img src="assets/icons/github.svg" alt="" />
 									</div>
@@ -928,6 +916,11 @@
 								</a>
 							</div>
 						</div>
+					</div>
+
+					<h3 class="sub-heading">Advisors</h3>
+
+					<div class="card-container">
 						<div class="team-card">
 							<div class="img-wrapper">
 								<img src="assets/images/team/rahul.jpg" alt="Crew Image" />
@@ -958,6 +951,24 @@
 									</div>
 								</a>
 								<a href="https://github.com/snh3003" target="_blank">
+									<div class="github">
+										<img src="assets/icons/github.svg" alt="" />
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="team-card">
+							<div class="img-wrapper">
+								<img src="assets/images/team/khushboo.jpg" alt="Crew Image" />
+							</div>
+							<div class="name">Khushboo</div>
+							<div class="social-btn-container">
+								<a href="https://www.linkedin.com/in/14khushboosharma/" target="_blank">
+									<div class="linkedin">
+										<img src="assets/icons/linkedin.svg" alt="" />
+									</div>
+								</a>
+								<a href="#">
 									<div class="github">
 										<img src="assets/icons/github.svg" alt="" />
 									</div>
@@ -1207,6 +1218,22 @@
 		</main>
 
 		<!-- Optional JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.0/js/OverlayScrollbars.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				//The first argument are the elements to which the plugin shall be initialized
+				//The second argument has to be at least a empty object or a object with your desired options
+				OverlayScrollbars(document.querySelectorAll("body"), {
+					className       : "os-theme-round-dark",
+					resize          : "both",
+					sizeAutoCapable : true,
+					paddingAbsolute : true,
+					scrollbars : {
+						clickScrolling : true
+					}
+				});
+			});
+		</script>
 
 		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 
