@@ -18,6 +18,8 @@ $silver: #f8f8f8;
 
 	background-size: cover;
 	background-repeat: no-repeat;
+
+	transition-duration: 50ms;
 }
 
 body {
@@ -253,11 +255,6 @@ main {
 	.container-fluid {
 		.row {
 			justify-content: center;
-
-			div:first-child {
-				//margin-bottom: 70px;
-				//background-color: lightblue;
-			}
 
 			.col-md-8 {
 				//background-color: lightblue;

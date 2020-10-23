@@ -1,0 +1,60 @@
+$time: 300ms;
+
+#darkmode-toggle {
+	height: 50px;
+	width: 50px;
+	background-color: #333;
+	color: red;
+
+	position: fixed;
+	z-index: 500;
+	bottom: 32px;
+	right: 32px;
+
+	border-radius: 500px;
+	transition-duration: 500ms;
+
+	text-align: center;
+	line-height: 50px;
+
+	&:hover {
+		cursor: pointer;
+
+		#tltip {
+			display: inline;
+			opacity: 1;
+		}
+	}
+
+	#tltip {
+		width: 170px;
+		display: none;
+		transition: 300ms;
+		color: #fff;
+		font-weight: 600;
+		letter-spacing: 1px;
+		z-index: 501;
+		position: absolute;
+		top: -60px;
+		left: -120px;
+		background-color: #333;
+		border-radius: 20px;
+	}
+}
+
+#darkmode-toggle::after {
+	content: '';
+	height: 500px;
+	width: 500px;
+	background-color: lightseagreen;
+}
+
+.dark-mode {
+	transition-duration: 400ms;
+}
+
+.darken {
+	color: #fff;
+	background-color: #333 !important;
+	transition-duration: 400ms;
+}
