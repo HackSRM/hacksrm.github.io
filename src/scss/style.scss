@@ -429,7 +429,7 @@ main {
 		}
 
 		p {
-			margin-top: 20px;
+			margin: 0;
 			text-align: center;
 			font-size: 2.5rem;
 		}
@@ -821,8 +821,9 @@ main {
 
 		.sub {
 			font-size: 2rem;
-			font-weight: 700;
-			color: rgba(0, 0, 0, 0.8);
+			font-weight: 600;
+			//color: rgba(0, 0, 0, 0.8);
+			opacity: 0.5;
 			text-align: center;
 		}
 
