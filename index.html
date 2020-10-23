@@ -18,6 +18,9 @@
 		<!--vendor css-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+		<link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.0/css/OverlayScrollbars.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://kingsora.github.io/OverlayScrollbars/etc/os-theme-round-dark.css">
+
 		<!--main css-->
 		<link rel="stylesheet" href="dist/css/style.min.css" />
 		<link rel="stylesheet" href="dist/css/responsive.min.css" />
@@ -1206,6 +1209,22 @@
 		</main>
 
 		<!-- Optional JavaScript -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.0/js/OverlayScrollbars.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				//The first argument are the elements to which the plugin shall be initialized
+				//The second argument has to be at least a empty object or a object with your desired options
+				OverlayScrollbars(document.querySelectorAll("body"), {
+					className       : "os-theme-round-dark",
+					resize          : "both",
+					sizeAutoCapable : true,
+					paddingAbsolute : true,
+					scrollbars : {
+						clickScrolling : true
+					}
+				});
+			});
+		</script>
 
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.min.js"
