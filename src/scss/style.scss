@@ -255,15 +255,14 @@ main {
 /* ---------- ABOUT SECTION ---------- */
 
 .about {
+	padding-bottom: 80px !important;
+
 	.container-fluid {
 		.row {
 			justify-content: center;
 
 			.col-md-8 {
-				//background-color: lightblue;
-
 				.title {
-					//background-color: lightcoral;
 					margin-bottom: 20px;
 
 					text-align: center;
@@ -272,7 +271,6 @@ main {
 				}
 
 				.content {
-					//background-color: lightgreen;
 					text-align: justify;
 					font-size: 1.5rem;
 
@@ -287,6 +285,34 @@ main {
 		.first {
 			margin-bottom: 50px !important; //TODO Make this more specific so that inportant is not required
 			//background-color: lightblue;
+		}
+
+		.button-wrapper {
+			margin-top: 60px;
+			@include flexcenter();
+
+			button {
+				padding: 15px 15px 11px 15px;
+				background-color: #000;
+
+				color: #fff;
+				font-weight: 700;
+				font-size: 1.1rem;
+				font-family: 'Josefin Sans', sans-serif;
+				letter-spacing: 1px;
+
+				outline: none;
+				border: none;
+				border-radius: 10px;
+
+				transition-duration: 300ms;
+				box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.1);
+
+				&:active {
+					transform: scale(0.9, 0.9);
+					box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+				}
+			}
 		}
 	}
 }
@@ -386,6 +412,7 @@ main {
 
 		.prize-card {
 			min-height: 500px;
+			height: 100%;
 			min-width: 400px;
 			padding: 40px 0;
 
@@ -407,6 +434,8 @@ main {
 				transform: scale(0.8);
 			}
 
+			font-family: 'Josefin Sans', sans-serif;
+
 			p {
 				text-align: center;
 				color: #fff;
@@ -416,11 +445,13 @@ main {
 
 			ul {
 				margin-top: 20px;
-				padding: 0 40px 0 70px;
+				padding: 0 40px 0 90px;
 
 				li {
 					color: #fff;
+					margin: 5px 0;
 					font-size: 1.4rem;
+					font-weight: 600;
 				}
 			}
 		}
@@ -444,6 +475,10 @@ main {
 			font-weight: 700;
 		}
 
+		.row {
+			justify-content: center;
+		}
+
 		.col-md-6 {
 			//background-color: lightcoral;
 			padding: 20px;
@@ -460,9 +495,10 @@ main {
 				@include flexcenter();
 				flex-direction: column;
 
-				h3 {
+				.prize-title {
 					text-align: center;
 					margin-bottom: 20px;
+					word-spacing: 5px;
 				}
 
 				.box-wrapper {
