@@ -50,11 +50,41 @@ $time: 300ms;
 }
 
 .dark-mode {
-	transition-duration: 400ms;
+	//transition-duration: $time;
+	transition: background-color 1s;
 }
 
 .darken {
 	color: #fff;
 	background-color: #333 !important;
-	transition-duration: 400ms;
+	//transition-duration: $time;
+	transition: background-color 1s;
+}
+
+.schedule.darken {
+	.timeline::after {
+		background-color: #f8f8f8;
+	}
+
+	.timeline .container-::after {
+		background-color: #f8f8f8;
+		border-color: #f8f8f8;
+	}
+}
+
+.contact.darken {
+	//background-color: blue !important;
+
+	.container {
+		.info-container {
+			.info-wrapper {
+				.info {
+					a {
+						transition-duration: $time;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
 }
