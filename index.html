@@ -990,13 +990,13 @@
 					</p>
 					<div class="info-container">
 						<div class="info-wrapper">
-							<a href="mailto:hacksrm2018@gmail.com">
+							<a class="mailtoui" href="mailto:hacksrm2018@gmail.com">
 								<div class="icon">
 									<img src="assets/images/contact/mail.png" alt="">
 								</div>
 							</a>
 							<div class="title">Email</div>
-							<div class="info"><a href="mailto:hacksrm2018@gmail.com">hacksrm2018@gmail.com</a></div>
+							<div class="info"><a class="mailtoui" href="mailto:hacksrm2018@gmail.com">hacksrm2018@gmail.com</a></div>
 						</div>
 						<div class="info-wrapper">
 							<a href="https://discord.gg/eSZDZ3k">
@@ -1217,25 +1217,8 @@
 			</footer>
 		</main>
 
-		<!-- Optional JavaScript -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.0/js/OverlayScrollbars.min.js"></script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				//The first argument are the elements to which the plugin shall be initialized
-				//The second argument has to be at least a empty object or a object with your desired options
-				OverlayScrollbars(document.querySelectorAll("body"), {
-					className       : "os-theme-round-dark",
-					resize          : "both",
-					sizeAutoCapable : true,
-					paddingAbsolute : true,
-					scrollbars : {
-						clickScrolling : true
-					}
-				});
-			});
-		</script>
 
-		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+		<!-- JAVASCRIPT -->
 
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -1269,6 +1252,25 @@
 
 		<!--vendor javascript-->
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.0/js/OverlayScrollbars.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				//The first argument are the elements to which the plugin shall be initialized
+				//The second argument has to be at least a empty object or a object with your desired options
+				OverlayScrollbars(document.querySelectorAll("body"), {
+					className       : "os-theme-round-dark",
+					resize          : "both",
+					sizeAutoCapable : true,
+					paddingAbsolute : true,
+					scrollbars : {
+						clickScrolling : true
+					}
+				});
+			});
+		</script>
+
+		<script src="assets/plugins/MailtoUI/mailtoui.min.js"></script>
 
 		<!--main javascript-->
 		<script src="dist/js/devfolio.js"></script>
