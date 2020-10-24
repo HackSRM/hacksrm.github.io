@@ -19,11 +19,6 @@
 		<!-- Font Awesome 4 -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-		<!-- OverlayScroll -->
-		<link rel="stylesheet" href="assets/plugins/OverlayScroll/OverlayScrollbars.min.css">
-		<link rel="stylesheet" href="assets/plugins/OverlayScroll/themes/os-theme-round-dark.css">
-		<link rel="stylesheet" href="assets/plugins/OverlayScroll/themes/os-theme-round-light.css">
-
 		<!--main css-->
 		<link rel="stylesheet" href="dist/css/style.min.css" />
 		<link rel="stylesheet" href="dist/css/responsive.min.css" />
@@ -35,6 +30,7 @@
 		<link rel="stylesheet" href="dist/css/devfolio.css" />
 		<link rel="stylesheet" href="dist/css/footer.min.css">
 		<link rel="stylesheet" href="dist/css/darkmode.min.css">
+		<link rel="stylesheet" href="dist/css/scrollbar.min.css">
 
 
 		<title>HackSRM 3.0</title>
@@ -1256,23 +1252,6 @@
 		<!--vendor javascript-->
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
-		<script src="assets/plugins/OverlayScroll/OverlayScrollbars.min.js"></script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				//The first argument are the elements to which the plugin shall be initialized
-				//The second argument has to be at least a empty object or a object with your desired options
-				OverlayScrollbars(document.querySelectorAll("body"), {
-					className       : "os-theme-round-dark",
-					resize          : "both",
-					sizeAutoCapable : true,
-					paddingAbsolute : true,
-					scrollbars : {
-						clickScrolling : true
-					}
-				});
-			});
-		</script>
-
 		<script src="assets/plugins/MailtoUI/mailtoui.min.js"></script>
 
 		<!--main javascript-->
@@ -1282,7 +1261,7 @@
 		<script src="dist/js/accordion.js"></script>
 		<script src="dist/js/canvas-particle.js"></script>
 		<script src="dist/js/timer.js"></script>
-		<!--<script src="dist/js/smooth-scrolling.js"></script>-->
+		<script src="dist/js/smooth-scrolling.js"></script>
 		<script src="dist/js/typed.js"></script>
 		<script src="dist/js/copyright.js"></script>
 		<script src="dist/js/darkmode.js"></script>

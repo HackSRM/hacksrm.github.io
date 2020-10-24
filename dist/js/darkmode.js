@@ -10,18 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			this.style.backgroundColor = '#ffedd7';
 			toolTip.style.backgroundColor = '#ffedd7';
 			toolTip.style.color = '#000';
-			OverlayScrollbars(document.querySelectorAll('body'), {
-				className: 'os-theme-round-light',
-			});
 
 			darkmodeState = true;
 		} else {
 			this.style.backgroundColor = '#333';
 			toolTip.style.backgroundColor = '#333';
 			toolTip.style.color = '#f8f8f8';
-			OverlayScrollbars(document.querySelectorAll('body'), {
-				className: 'os-theme-round-dark',
-			});
 
 			darkmodeState = false;
 		}
