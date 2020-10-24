@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	document.getElementById('darkmode-toggle').addEventListener('click', function () {
 		//console.log('dark mode activated');
-		darkmodeState === false ? (this.style.backgroundColor = '#333') : (this.style.backgroundColor = '#fff');
+		darkmodeState === false ? (this.style.backgroundColor = '#222') : (this.style.backgroundColor = '#fff');
 
 		if (darkmodeState === false) {
 			this.style.backgroundColor = '#ffedd7';
@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			darkmodeState = true;
 		} else {
-			this.style.backgroundColor = '#333';
-			toolTip.style.backgroundColor = '#333';
+			this.style.backgroundColor = '#222';
+			toolTip.style.backgroundColor = '#222';
 			toolTip.style.color = '#f8f8f8';
 
 			darkmodeState = false;

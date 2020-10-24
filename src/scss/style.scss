@@ -42,6 +42,11 @@ body {
 	font-size: 5rem;
 	text-align: center;
 	font-weight: 700;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.sub-heading {
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 //MIXIN
@@ -53,8 +58,6 @@ body {
 
 //MAIN CSS
 main {
-	//overflow-x: hidden;
-	//height: 100vh;
 	overflow-x: hidden;
 	width: 100%;
 
@@ -369,7 +372,9 @@ main {
 /* ---------- PRIZES SECTION ---------- */
 
 .prizes {
-	padding-top: 100px;
+	padding: 100px 0;
+	background-color: #ffedd7;
+
 	.section-title {
 		margin-top: 0;
 	}
@@ -432,10 +437,62 @@ main {
 			background-image: linear-gradient(to top, #f5576c 0%, #f093fb 100%);
 		}
 
-		p {
+		.sub-heading {
+			margin: 80px 0 50px 0;
+			text-align: center;
+			font-size: 3.5rem;
+			font-weight: 700;
+		}
+
+		.col-md-6 {
+			//background-color: lightcoral;
+			padding: 20px;
+			$border-radius: 30px;
+
+			.cprize-card {
+				height: 100%;
+				padding: 20px 30px 30px 30px;
+				background-color: #222;
+				border-radius: $border-radius;
+				box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.1);
+				color: #fff;
+
+				@include flexcenter();
+				flex-direction: column;
+
+				h3 {
+					text-align: center;
+					margin-bottom: 20px;
+				}
+
+				.box-wrapper {
+					width: 100%;
+					height: 100%;
+					padding: 4px;
+					background: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+					border-radius: $border-radius - 10px;
+
+					.box {
+						height: 100%;
+						padding: 20px;
+						background-color: #222;
+						border-radius: $border-radius - 15px;
+
+						p {
+							//width: max-content;
+							margin: 5px 0;
+						}
+					}
+				}
+			}
+		}
+
+		.sub {
 			margin: 0;
+			margin-top: 80px;
 			text-align: center;
 			font-size: 2.5rem;
+			//color: #000;
 		}
 	}
 }
@@ -490,6 +547,7 @@ main {
 					//letter-spacing: 0.5px;
 					word-spacing: 3px;
 					text-align: right;
+					font-family: 'Josefin Sans', sans-serif;
 				}
 			}
 		}
@@ -591,6 +649,8 @@ main {
 	.container {
 		@include flexcenter();
 		padding: 0 130px;
+
+		font-family: 'Josefin Sans', sans-serif !important;
 	}
 }
 
@@ -615,7 +675,8 @@ main {
 			.tier-title {
 				position: relative;
 				//left: 50%;
-				padding: 0;
+				//padding: 20px 0 0 0;
+				padding-top: 15px !important;
 				margin: 0;
 				transform: translate(0%, 50%);
 
@@ -628,6 +689,7 @@ main {
 				font-size: 1.2rem;
 				font-weight: 500;
 				letter-spacing: 1.5px;
+				font-family: 'Josefin Sans', sans-serif;
 			}
 
 			.line {
@@ -640,6 +702,7 @@ main {
 
 		.row {
 			justify-content: center;
+
 			.col-md-4 {
 				position: relative;
 				margin: 40px 0;
@@ -756,12 +819,13 @@ main {
 			}
 
 			.name {
-				padding: 5px 20px;
+				padding: 9px 20px 5px 20px;
 				background-color: #000;
 
 				color: #fff;
 				font-weight: 500;
 				letter-spacing: 1px;
+				font-family: 'Josefin Sans', sans-serif;
 
 				border-radius: 10px;
 
