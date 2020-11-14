@@ -537,8 +537,13 @@ main {
 						border-radius: $border-radius - 15px;
 
 						p {
-							//width: max-content;
 							margin: 5px 0;
+						}
+
+						p.category-prize-info {
+							text-align: center;
+							font-weight: 600;
+							font-size: 1.2rem;
 						}
 					}
 				}
