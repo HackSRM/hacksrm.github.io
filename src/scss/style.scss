@@ -780,7 +780,7 @@ main {
 					width: 80%;
 				}
 
-				.gmc {
+				#gmc {
 					width: 100%;
 				}
 
@@ -810,10 +810,12 @@ main {
 				#fold {
 					transform: scale(1.4) translateX(-40%);
 				}
+
+				#zubi {
+					height: 100px;
+					width: 100px;
+				}
 			}
-			/*.col-md-4:nth-child(2n) {
-				background-color: lightsalmon;
-			}*/
 		}
 	}
 }
