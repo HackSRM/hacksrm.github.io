@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date('Nov 20, 2020 18:31:00').getTime();
+var countDownDate = new Date('Nov 22, 2020 11:30:00').getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -21,7 +21,7 @@ var x = setInterval(function () {
 	document.getElementById('minTens').innerHTML = places(minutes).tens;
 	document.getElementById('minOnes').innerHTML = places(minutes).ones;
 
-	if (places(hours).ones == 0 && places(minutes).ones == 0) {
+	if (places(hours).ones < 0 && places(minutes).ones < 0) {
 		clearInterval(x);
 		console.log('Hackathon Begins');
 		hackathonBegins();
@@ -36,8 +36,6 @@ var x = setInterval(function () {
 		document.getElementById('minOnes').innerHTML = '0';
 	}
 }, 1000);
-
-let rando = 24;
 
 function places(num) {
 	let ones = num % 10;
